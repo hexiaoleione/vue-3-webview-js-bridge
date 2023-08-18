@@ -1,7 +1,7 @@
 {
-  "name": "vue-webview-js-bridge",
-  "version": "0.0.8",
-  "author": "Kntt<kntt9968@gmail.com>",
+  "name": "vue3-webview-js-bridge",
+  "version": "0.0.11",
+  "author": "vue3-webview-js-bridge",
   "description": "webview-js-bridge plugin for Vue.js",
   "keywords": [
     "vue",
@@ -56,12 +56,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kntt/vue-js-bridge"
+    "url": "git+https://github.com/hexiaoleione/vue-3-webview-js-bridge"
   },
   "bugs": {
     "url": "https://github.com/Kntt/vue-js-bridge/issues"
   },
-  "homepage": "https://github.com/Kntt/vue-js-bridge#readme",
+  "homepage": "https://github.com/hexiaoleione/vue-3-webview-js-bridge#readme",
   "license": "MIT",
   "config": {
     "ghooks": {
