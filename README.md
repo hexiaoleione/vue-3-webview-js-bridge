@@ -14,13 +14,13 @@
 yarn:
 
 ```bash
-yarn add vue-webview-js-bridge
+yarn add vue3-webview-js-bridge
 ```
 
 npm:
 
 ```bash
-npm i vue-webview-js-bridge
+npm i vue3-webview-js-bridge
 ```
 
 ## [Example](https://github.com/Kntt/vue-js-bridge/tree/dev/example/client)
@@ -28,11 +28,20 @@ npm i vue-webview-js-bridge
 ```js
 // main.js
 import { createApp } from "vue";
-import AppLayout from "./layout/index.vue";
-import VueJsBridge from 'vue-webview-js-bridge'
+import App from './App.vue'
+import VueJsBridge from 'vue3-webview-js-bridge'
 
-const app = createApp(AppLayout);
-app.use(VueJsBridge);
+const app = createApp(App);
+app.use(VueJsBridge, {
+	debug: true,
+	nativeHandlerName: 'testObjcCallback',
+	mock: true,
+	mockHandler(payload, next) {
+		// mock by payload
+		// call next(data) to mock data
+	}
+	// ...
+})
 
 // component.vue
 export default {
